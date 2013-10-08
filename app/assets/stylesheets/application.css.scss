@@ -1,0 +1,42 @@
+@import 'twitter/bootstrap';
+@import 'home';
+
+html, body {
+  height: 100%;
+}
+body { 
+  padding-top: 60px;
+  background-image: url('ricepaper.png');
+
+}
+
+.container {
+  height: 100%;
+}
+
+
+.col-md-9 {
+  background-color: #FFF;
+  height: 100%;
+}
+/*.container, .row, */.col-md-3{
+  background-color: lightgreen;
+  height: 100%;
+}
+
+
+
+
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}
+
+ .navbar-inner {
+    text-align:center;
+}
+
+
