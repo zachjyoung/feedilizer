@@ -21,3 +21,5 @@ class FeedEntry < ActiveRecord::Base
   end
 end
 
+
+
