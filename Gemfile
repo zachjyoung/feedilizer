@@ -49,6 +49,9 @@ end
 #devise
 gem 'devise'
 
+#feedzirra
+gem 'feedzirra'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
