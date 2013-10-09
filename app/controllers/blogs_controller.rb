@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   def create
     url = blog_params[:url]
     @blog = Blog.blog_from_url(url)
-    if @blog.save!
+    if @blog.save
       redirect_to root_path
     else
       render 'new'
