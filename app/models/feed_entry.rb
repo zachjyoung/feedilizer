@@ -2,6 +2,8 @@ class FeedEntry < ActiveRecord::Base
 
   include ActionView::Helpers::TextHelper
 
+  belongs_to :blog, inverse_of: :feed_entries
+
   def self.update_from_feed(feed_url)
     feed = Feedzirra::Feed.fetch_and_parse(feed_url)
     add_entries(feed.entries)
