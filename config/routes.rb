@@ -1,4 +1,6 @@
 Feedilizer::Application.routes.draw do
+  resources :blogs
+
   resources :homes
 
   devise_for :users
