@@ -5,7 +5,7 @@
   <h3>Recent Railscasts Episodes</h3>
   <ul>
   <% for entry in FeedEntry.all(:limit => 10, :order => "published_at desc") %>
-    <li><%= link_to h(entry.name), entry.url %></li>
+    <li><%= link_to entry.name, entry.url %></li>
     <li><%= entry.summary %></li>
   <% end %>
   </ul>
