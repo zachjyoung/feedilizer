@@ -12,7 +12,6 @@
   
   <nav> 
     <ul class="nav nav-pills navbar-fixed-top" role="navigation">
-
       <li><%= link_to "Take me home again", '/' %>
         <div class="test">
         <%- if user_signed_in? -%>
@@ -28,13 +27,13 @@
     </ul>
   </nav>
 
-  <div class="col-md-3">
+  <div class="col-md-3 hello-sidebar">
     <h1>Hello</h1>
     <p> the group and setting stuff goes</p>
   </div>
 
 
-  <div class="col-md-9">
+  <div class="col-md-9 meat">
     <h1>World</h1>
     <p> here the rss feeds go</p>
   <%= yield %>
