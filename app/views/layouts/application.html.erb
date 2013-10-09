@@ -7,18 +7,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <%= link_to "Take me home again", '/' %>
+<div class="container">
+<div class="row">
   
-  <%= link_to "Sign up", new_user_registration_path %>
-  <%= link_to "Sign in", new_user_session_path %>
-  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+  <nav> 
+    <ul class="nav nav-pills navbar-fixed-top" role="navigation">
+      <li><%= link_to "Take me home again", '/' %>
+        <div class="test">
+        <%- if user_signed_in? -%>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <%- else -%>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, id: "flash_#{name}" %>
+          <% end %>
+        <% end %>
+      </div>
+    </ul>
+  </nav>
 
- <% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, id: "flash_#{name}" %>
-<% end %>
+  <div class="col-md-3 hello-sidebar">
+    <h1>Hello</h1>
+    <p> the group and setting stuff goes</p>
+  </div>
 
-<%= yield %>
 
+  <div class="col-md-9 meat">
+    <h1>World</h1>
+    <p> here the rss feeds go</p>
+  <%= yield %>
+  </div>
+  
+</div>
+</div>
 </body>
 </html>
