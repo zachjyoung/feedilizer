@@ -11,7 +11,7 @@ class FeedEntry < ActiveRecord::Base
       unless exists? :guid => entry.id
         create!(
           :name         => entry.title,
-          :summary      => entry.summary || truncate(entry.content, length: 250),
+          :summary      => entry.summary,
           :url          => entry.url,
           :published_at => entry.published,
           :guid         => entry.id
