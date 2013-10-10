@@ -2,10 +2,7 @@
 
 FactoryGirl.define do
   factory :blog do
-    url "MyString"
-    summary "MyText"
-    guid "MyString"
-    published_at "2013-10-09 14:21:59"
-    name "MyString"
+    url "http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"
+    title "The awesome blog"
   end
 end
