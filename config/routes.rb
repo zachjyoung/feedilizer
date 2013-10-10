@@ -1,5 +1,9 @@
 Feedilizer::Application.routes.draw do
+  resources :blogs
+
   resources :homes
+
+  resources :feed_entries
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
