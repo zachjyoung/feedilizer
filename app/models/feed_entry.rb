@@ -2,15 +2,14 @@ class FeedEntry < ActiveRecord::Base
 
   include ActionView::Helpers::TextHelper
 
+  belongs_to :blog, inverse_of: :feed_entries
+
   validates_presence_of :title
   validates_presence_of :guid
   validates_presence_of :published_at
   validate :date_cant_be_in_the_past_or_future
 
   validates :url, :format => URI::regexp(%w(http https))
-
-
-  belongs_to :blog, inverse_of: :feed_entries
 
   def self.update_from_feed(feed_url)
     feed = Feedzirra::Feed.fetch_and_parse(feed_url)

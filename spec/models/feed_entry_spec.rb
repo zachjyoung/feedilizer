@@ -13,5 +13,5 @@ describe FeedEntry do
   it { should have_valid(:title).when("Oh my god this thing!", "I hate the MBTA") }
   it { should_not have_valid(:title).when("", nil) }
 
-  it { should have_many(:feed_entries) }
+  it { should belong_to(:blog) }
 end

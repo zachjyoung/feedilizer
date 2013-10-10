@@ -1,9 +1,12 @@
 class Blog < ActiveRecord::Base
+ 
+  has_many :feed_entries, inverse_of: :blog 
+  has_many :blog_categorizations, inverse_of: :blog
+  has_many :categories, through: :blog_categorizations, inverse_of: :blogs
+
   validates :url, :format => URI::regexp(%w(http https))
   validates_presence_of :title
-
-
-  has_many :feed_entries, inverse_of: :blog
+  validates_uniqueness_of :url
 
   def self.blog_from_url(feed_url)
     feed = Feedzirra::Feed.fetch_and_parse(feed_url)

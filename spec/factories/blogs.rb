@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :blog do
     url "http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"
-    title "The awesome blog"
+    title "NYT > Jobs"
   end
 end
