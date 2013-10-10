@@ -42,6 +42,9 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda'
   gem 'pry-rails'
+  gem 'vcr'
+  gem 'fakeweb'
+  gem 'capybara-mechanize'
 end
 
 group :production do 

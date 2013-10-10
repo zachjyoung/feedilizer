@@ -13,6 +13,7 @@ class Blog < ActiveRecord::Base
     blog = Blog.new
     blog.url = feed.url
     blog.title = feed.title
+    blog.feed_url = feed_url
     blog
   end
 
