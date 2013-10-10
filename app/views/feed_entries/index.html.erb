@@ -1,0 +1,9 @@
+<div id="recent_episodes">
+  <h3>All the blogs</h3>
+  <ul>
+  <% @feed_entries.each do |entry| %>
+    <li><%= link_to entry.title, entry.url %></li>
+    <li><%= entry.summary %></li>
+  <% end %>
+  </ul>
+</div>
