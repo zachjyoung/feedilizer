@@ -5,6 +5,8 @@ Feedilizer::Application.routes.draw do
 
   resources :feed_entries
 
+  resources :categories
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -46,7 +48,7 @@ Feedilizer::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
