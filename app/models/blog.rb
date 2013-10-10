@@ -1,4 +1,7 @@
 class Blog < ActiveRecord::Base
+  validates :url, :format => URI::regexp(%w(http https))
+  validates_presence_of :title
+
 
   has_many :feed_entries, inverse_of: :blog
 
