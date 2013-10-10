@@ -21,4 +21,3 @@ end
  #  expect(page).to have_content('Category recorded.')
  #  expect(Category.count).to eql(prev_count + 1)
  #  end
-
