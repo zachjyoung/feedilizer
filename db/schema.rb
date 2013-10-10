@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20131009214648) do
   enable_extension "plpgsql"
 
   create_table "blogs", force: true do |t|
-    t.string   "url"
+    t.string   "url",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
