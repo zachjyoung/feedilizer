@@ -3,6 +3,8 @@ class Blog < ActiveRecord::Base
   has_many :feed_entries, inverse_of: :blog 
   has_many :blog_categorizations, inverse_of: :blog
   has_many :categories, through: :blog_categorizations, inverse_of: :blogs
+  has_many :user_blogs, inverse_of: :blog
+  has_many :users, through: :user_blogs, inverse_of: :blogs
 
   validates :url, :format => URI::regexp(%w(http https))
   validates_presence_of :title

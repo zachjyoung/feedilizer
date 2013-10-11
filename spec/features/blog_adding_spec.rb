@@ -6,9 +6,9 @@ feature 'Add a blog', %Q{
   So I can digest more blogs on my feed
 }do
 
-let(:user) { FactoryGirl.create(:user) }
+let!(:user) { FactoryGirl.create(:user) }
 let(:blog) { FactoryGirl.build(:blog) }
-let!(:category) { FactoryGirl.create(:category) }
+let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
 
   scenario 'Authenticated user adds a blog to their feed' do
     login_user(user)
