@@ -34,7 +34,7 @@ end
 
 gem 'simple_form'
 
-group :development, :test do 
+group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
@@ -42,9 +42,10 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda'
   gem 'pry-rails'
+  gem 'quiet_assets'
 end
 
-group :production do 
+group :production do
   gem 'rails_12factor'
 end
 
@@ -52,7 +53,7 @@ gem 'devise'
 
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
-                              
+
 gem 'feedzirra'
 
 # Use ActiveModel has_secure_password

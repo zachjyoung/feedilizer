@@ -1,0 +1,25 @@
+
+<table>
+
+    <thead>
+      <tr>
+        <th>Blogs</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @blogs.each do |blog| %>
+        <tr>
+          <td><%=link_to blog.title, blog_path(blog) %></td>
+              <td><% blog.categories.each do |category| %></td>
+          <td><%=link_to category.name, category_path(category) %> </td>
+
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+
+  </table>
+
+<br>
+<%= link_to 'Add New Blog', new_blog_path, class: 'button' %>
