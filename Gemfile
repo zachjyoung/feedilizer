@@ -42,9 +42,8 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda'
   gem 'pry-rails'
-  gem 'vcr'
-  gem 'fakeweb'
-  gem 'capybara-mechanize'
+  gem 'vcr', '2.4.0'
+  gem 'webmock'
 end
 
 group :production do 
@@ -56,7 +55,8 @@ gem 'devise'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
                               
-gem 'feedzirra'
+gem 'simple-rss'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -15,13 +15,16 @@ feature 'User can add a feed to their blogs', %Q{
 # Feed must be valid xml or rss. 
 
 let(:user) { FactoryGirl.create(:user) }
+let(:blog) { FactoryGirl.build(:blog) }
 
   scenario "user adds a feed to site" do 
-    login_user(user)
-    click_on "Add blog"
-    fill_in "URL", with: "http://mskyle.github.io/atom.xml"
-    click_on "Submit"
-    expect(page).to have_content("Kyle's blog has been added to your feed.")
+    VCR.use_cassette('valid_feed') do 
+      login_user(user)
+      click_on "Add blog"
+      fill_in "URL", with: blog.url
+      click_on "Submit"
+      expect(page).to have_content("Kyle's blog has been added to your feed.")
+    end  
   end
 end
 

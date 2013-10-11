@@ -1,4 +1,6 @@
 class FeedEntry < ActiveRecord::Base
+require 'simple-rss'
+require 'open-uri'
 
   include ActionView::Helpers::TextHelper
 
@@ -11,18 +13,8 @@ class FeedEntry < ActiveRecord::Base
   validates :url, :format => URI::regexp(%w(http https))
 
   def self.update_from_feed(blog)
-    feed = Feedzirra::Feed.fetch_and_parse(blog.feed_url)
+    feed = SimpleRSS.parse open(blog.feed_url)
     add_entries(feed.entries, blog.id)
-  end
-
-  def self.update_from_feed_continuously(blog, delay_interval = 1.minutes)
-    feed = Feedzirra::Feed.fetch_and_parse(blog.feed_url)
-    add_entries(feed.entries, blog.id)
-    loop do
-      sleep delay_interval
-      feed = Feedzirra::Feed.update(feed)
-      add_entries(feed.new_entries, blog.id) if feed.updated?
-    end
   end
 
   private
@@ -31,11 +23,11 @@ class FeedEntry < ActiveRecord::Base
     entries.each do |entry|
       unless exists? :guid => entry.id
         create!(
-          :name         => entry.title,
+          :name          => entry.title,
           :summary       => entry_summary(entry),
-          :url           => entry.url,
-          :published_at  => entry.published,
-          :guid          => entry.id,
+          :url           => entry.link,
+          :published_at  => entry.pubDate,
+          :guid          => entry.guid,
           :blog_id       => blog_id
         )
       end
