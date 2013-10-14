@@ -18,10 +18,6 @@ class FeedEntry < ActiveRecord::Base
 
   private
 
-  def date_cant_be_in_the_past_or_future
-    :published_at == Date.today
-  end
-
   def self.add_entries(entries)
     entries.each do |entry|
       unless exists? :guid => entry.id
