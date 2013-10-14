@@ -46,6 +46,11 @@ group :development, :test do
   gem 'webmock'
 end
 
+group :test do
+  gem 'rake'
+  gem 'coveralls', require: false
+end
+
 group :production do 
   gem 'rails_12factor'
 end
@@ -54,7 +59,7 @@ gem 'devise'
 
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
-                              
+
 gem 'simple-rss'
 
 

@@ -5,6 +5,8 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'webmock/rspec'
 
+require 'coveralls'
+Coveralls.wear!('rails')
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
