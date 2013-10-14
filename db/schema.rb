@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20131011155931) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+    t.string   "feed_url",   null: false
   end
 
   create_table "categories", force: true do |t|
@@ -34,25 +35,20 @@ ActiveRecord::Schema.define(version: 20131011155931) do
   end
 
   create_table "feed_entries", force: true do |t|
-    t.string   "name"
+    t.string   "name",         null: false
     t.text     "summary"
-    t.string   "url"
-    t.datetime "published_at"
-    t.string   "guid"
+    t.string   "url",          null: false
+    t.datetime "published_at", null: false
+    t.string   "guid",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
     t.integer  "blog_id",      null: false
   end
 
-  create_table "homes", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "user_blogs", force: true do |t|
-    t.integer "blog_id"
-    t.integer "user_id"
+    t.integer "blog_id", null: false
+    t.integer "user_id", null: false
   end
 
   create_table "users", force: true do |t|

@@ -1,32 +1,35 @@
 class FeedEntry < ActiveRecord::Base
+  require 'simple-rss'
+  require 'open-uri'
 
   include ActionView::Helpers::TextHelper
 
   belongs_to :blog, inverse_of: :feed_entries
 
-  validates_presence_of :title
+  validates_presence_of :name
   validates_presence_of :guid
   validates_presence_of :published_at
-  validate :date_cant_be_in_the_past_or_future
 
   validates :url, :format => URI::regexp(%w(http https))
 
-  def self.update_from_feed(feed_url)
-    feed = Feedzirra::Feed.fetch_and_parse(feed_url)
-    add_entries(feed.entries)
+  def self.update_from_feed(blog)
+    feed = SimpleRSS.parse open(blog.feed_url)
+    add_entries(feed.entries, blog.id)
   end
 
   private
 
-  def self.add_entries(entries)
+
+  def self.add_entries(entries, blog_id)
     entries.each do |entry|
       unless exists? :guid => entry.id
         create!(
           :name          => entry.title,
           :summary       => entry_summary(entry),
-          :url           => entry.url,
-          :published_at  => entry.published,
-          :guid          => entry.id
+          :url           => entry.link,
+          :published_at  => entry.pubDate,
+          :guid          => entry.guid,
+          :blog_id       => blog_id
         )
       end
     end
@@ -35,12 +38,11 @@ class FeedEntry < ActiveRecord::Base
   def self.entry_summary(entry)
     if entry.summary.present?
       return entry.summary
-    elsif entry.description.present?
-      return entry.description
     elsif entry.content.present?
-      return entry.content.truncate(length: 250, separator: ' ')
+      return entry.content.truncate(250)
     else
       return ""
     end
   end
 end
+

@@ -10,8 +10,8 @@ describe FeedEntry do
   it { should have_valid(:published_at).when(Date.today) }
   it { should_not have_valid(:published_at).when("", nil) }
 
-  it { should have_valid(:title).when("Oh my god this thing!", "I hate the MBTA") }
-  it { should_not have_valid(:title).when("", nil) }
+  it { should have_valid(:name).when("Oh my god this thing!", "I hate the MBTA") }
+  it { should_not have_valid(:name).when("", nil) }
 
   it { should belong_to(:blog) }
 end

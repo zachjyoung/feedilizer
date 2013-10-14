@@ -1,0 +1,547 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2013 20:42:01 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - RMID=007f0100232352586299002d; Expires=Sat, 11 Oct 2014 20:42:01 GMT; Path=/;
+        Domain=.nytimes.com;
+      Vary:
+      - Host
+      Last-Modified:
+      - Thu, 22 Jul 2010 04:31:37 GMT
+      Accept-Ranges:
+      - bytes
+      Ntcoent-Length:
+      - '18703'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml
+      Cache-Control:
+      - private
+      Content-Length:
+      - '4061'
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0"?>
+        <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+          <channel>
+            <title>NYT &gt; Jobs</title>
+            <link>http://www.nytimes.com/pages/jobs/index.html?partner=rss</link>
+            <atom:link rel="self" type="application/rss+xml" href="http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"/>
+            <description/>
+            <language>en-us</language>
+            <copyright>Copyright 2010  The New York Times Company</copyright>
+            <lastBuildDate>Thu, 22 Jul 2010 04:31:03 GMT </lastBuildDate>
+            <image>
+              <title>NYT &gt; Jobs</title>
+              <url>http://graphics.nytimes.com/images/section/NytSectionHeader.gif</url>
+              <link>http://www.nytimes.com/pages/jobs/index.html?partner=rss</link>
+            </image>
+            <item>
+              <title>Corner Office: Never Duck Tough Questions, Says Drugstore.com&#x2019;s Chief</title>
+              <link>http://www.nytimes.com/2010/07/18/business/18corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/business/18corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description> &#x201C;You have to be transparent as a leader and you have to be willing to take criticism openly,&#x201D; says Dawn Lepore, the chairwoman and C.E.O. of Drugstore.com. She is also a director of eBay and The New York Times Company.</media:description>
+              <media:credit>Tony Cenicola/The New York Times</media:credit>
+              <description>Dawn Lepore, chairwoman and chief executive of Drugstore.com, says good leaders direct employees&#x2019; energies toward the mission at hand.</description>
+              <dc:creator>By ADAM BRYANT</dc:creator>
+              <pubDate>Sun, 18 Jul 2010 02:20:15 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">eBay Inc|EBAY|NASDAQ</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Lepore, Dawn G</category>
+            </item>
+            <item>
+              <title>The Boss: Still Minding the Mill</title>
+              <link>http://www.nytimes.com/2010/07/18/jobs/18boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/jobs/18boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/business/SUB-BOSS/SUB-BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Nancy Garner</media:credit>
+              <description>Bob Moore, founder and chief executive of Bob&#x2019;s Red Mill Natural Foods in Milwaukie, Ore.</description>
+              <dc:creator/>
+              <pubDate>Mon, 19 Jul 2010 18:19:30 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Bob's Red Mill Natural Foods</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Grain</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Organic Food</category>
+            </item>
+            <item>
+              <title>The Search: How to Rebound From a Wrong Career Choice</title>
+              <link>http://www.nytimes.com/2010/07/18/jobs/18search.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/jobs/18search.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/jobs/18search/18search-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Sean Kelly</media:credit>
+              <description>Many young people can be steered into careers and discover much later that the choice was wrong.</description>
+              <dc:creator>By PHYLLIS KORKKI</dc:creator>
+              <pubDate>Sat, 17 Jul 2010 21:02:53 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+            </item>
+            <item>
+              <title>Corner Office: Always Thank Your Star Players, Chegg&#x2019;s C.E.O. Says</title>
+              <link>http://www.nytimes.com/2010/07/11/business/11corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/business/11corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Dan Rosensweig is president and chief executive of Chegg, which rents textbooks online and by mail. He likes to call the company&#x2019;s best employees to say thanks &#x2014; and to tell them that they&#x2019;re &#x201C;knocking the cover off the ball.&#x201D;</media:description>
+              <media:credit>Tony Cenicola/The New York Times</media:credit>
+              <description>Dan Rosensweig, president and C.E.O. of Chegg Inc., the online and mail-order textbook rental service, admires people who aren&#x2019;t afraid to think big.</description>
+              <dc:creator/>
+              <pubDate>Sun, 11 Jul 2010 02:00:27 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Rosensweig, Dan</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Chegg Inc</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+            </item>
+            <item>
+              <title>Preoccupations: An Entrepreneur Who Took a Chance on Herself</title>
+              <link>http://www.nytimes.com/2010/07/11/jobs/11pre.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/jobs/11pre.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/PRE/PRE-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Prerna Gupta runs a start-up company that makes LaDiDa, a &#x201C;reverse karaoke&#x201D; application for the iPhone.</media:description>
+              <media:credit>Erik S. Lesser for The New York Times</media:credit>
+              <description>Prerna Gupta, C.E.O. of Khush Inc. &#x2014; the creator of an iPhone app called LaDiDa &#x2014; discusses her journey to entrepreneurship.</description>
+              <dc:creator>By PRERNA GUPTA</dc:creator>
+              <pubDate>Sat, 10 Jul 2010 18:53:50 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Gupta, Prerna</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">iPhone</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Entrepreneurship</category>
+            </item>
+            <item>
+              <title>The Boss: Margaret Minson: When the Game&#x2019;s on the Line</title>
+              <link>http://www.nytimes.com/2010/07/11/jobs/11boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/jobs/11boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Dr. Margaret M. Minson</media:description>
+              <media:credit/>
+              <description>As an athlete, Margaret Minson of Student Sponsor Partners learned how to take risks &#x2014; a quality that has helped her in her career.</description>
+              <dc:creator/>
+              <pubDate>Sat, 10 Jul 2010 18:59:33 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Athletics and Sports</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Education and Schools</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Colleges and Universities</category>
+            </item>
+            <item>
+              <title>Corner Office: Susan Docherty of G.M.: What if You Were in My Shoes?</title>
+              <link>http://www.nytimes.com/2010/02/07/business/07corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/02/07/business/07corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/02/07/business/07cornerprint_CA0/07cornerprint_CA0-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Susan Docherty, who leads the United States sales, service and marketing team at General Motors, says she asks job candidates for three things they would do if they were in her position.</media:description>
+              <media:credit>Fabrizio Costantini for The New York Times</media:credit>
+              <description>Susan Docherty of General Motors says that by asking potential hires how they would perform her job, she gets an idea of how they think on their feet.</description>
+              <dc:creator/>
+              <pubDate>Tue, 13 Apr 2010 18:40:54 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">General Motors</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Docherty, Susan</category>
+            </item>
+            <item>
+              <title>For a New Generation, an Elusive American Dream</title>
+              <link>http://www.nytimes.com/2010/07/07/business/economy/07generation.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/07/business/economy/07generation.html</guid>
+              <description>In the Nicholson family, America is not delivering for a grandson as it did for his father and grandfather.</description>
+              <dc:creator>By LOUIS UCHITELLE</dc:creator>
+              <pubDate>Wed, 07 Jul 2010 16:12:06 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">United States Economy</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Children and Youth</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Recession and Depression</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Economic Conditions and Trends</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_keyword">The Great Depression</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_keyword">The Great Recession</category>
+            </item>
+            <item>
+              <title>Corner Office: The Limited&#x2019;s Chief: Re-Recruit Your Team Every Day</title>
+              <link>http://www.nytimes.com/2010/07/04/business/04corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/business/04corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Linda Heasley is president and chief executive of The Limited, based near Columbus, Ohio. She says that it&#x2019;s her job to always give her associates &#x201C;a reason to choose to work for us and for me as opposed to anybody else.&#x201D;</media:description>
+              <media:credit>Marilynn K. Yee/The New York Times</media:credit>
+              <description>Linda Heasley of The Limited says she should always be able to show her workers why they should work for her and her company.</description>
+              <dc:creator/>
+              <pubDate>Sun, 04 Jul 2010 03:40:00 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Shopping and Retail</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Limited Brands</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Heasley, Linda</category>
+            </item>
+            <item>
+              <title>The Boss: Flying the Annin &amp; Co. Flag</title>
+              <link>http://www.nytimes.com/2010/07/04/jobs/04boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/jobs/04boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit/>
+              <description>After trying to buy the nation&#x2019;s oldest flag company, an executive with wide experience ended up running it.</description>
+              <dc:creator/>
+              <pubDate>Sun, 04 Jul 2010 04:30:01 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Flags, Emblems and Insignia</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Annin &amp; Co.</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Scarlett, Lindley</category>
+            </item>
+            <item>
+              <title>Career Couch: Avoiding Collisions of Church and the Workplace</title>
+              <link>http://www.nytimes.com/2010/07/04/jobs/04career.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/jobs/04career.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/04career-ready/04career-ready-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Chris Reed</media:credit>
+              <description>When it comes to religious expression at work, employers must balance the interests of the business with their employees&#x2019; beliefs, workplace experts say.</description>
+              <dc:creator>By EILENE ZIMMERMAN</dc:creator>
+              <pubDate>Sun, 04 Jul 2010 04:20:00 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Holidays and Special Occasions</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Religion and Belief</category>
+            </item>
+            <item>
+              <title>Corner Office: To MasterCard&#x2019;s Retiring Chief, the X Factor is Presence</title>
+              <link>http://www.nytimes.com/2010/06/27/business/27corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/business/27corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/CORNER/CORNER-thumbStandard-v2.jpg" medium="image" height="75" width="75"/>
+              <media:description>Robert W. Selander, who is retiring this week as C.E.O. of MasterCard, a job he held for 14 years, says it's important to relate to all of a company's stakeholders.</media:description>
+              <media:credit>Todd Heisler/The New York Times</media:credit>
+              <description>Robert W. Selander, who is retiring this week as chief executive of MasterCard, says it is important for leaders to relate to stakeholders at different levels of their companies.</description>
+              <dc:creator/>
+              <pubDate>Mon, 28 Jun 2010 03:19:11 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Credit Cards</category>
+            </item>
+            <item>
+              <title>Preoccupations: The Urban Lands of Opportunity</title>
+              <link>http://www.nytimes.com/2010/06/27/jobs/27pre.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/jobs/27pre.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/PRE/PRE-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>A Starbucks in Fort Worth. Lifestyles and work styles have blurred to the point that a stop for coffee also offers a chance to tackle important tasks.</media:description>
+              <media:credit>Tom Pennington/Getty Images</media:credit>
+              <description>Where we live, rather than who&#x2019;s employing us, may now be attaching us to our work and careers.</description>
+              <dc:creator>By RICHARD FLORIDA</dc:creator>
+              <pubDate>Sun, 27 Jun 2010 14:10:03 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Urban Areas</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Sociology</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+            </item>
+            <item>
+              <title>The Boss: Joel Peresman, Drawn to the Music</title>
+              <link>http://www.nytimes.com/2010/06/27/jobs/27boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/jobs/27boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Janet Macoska</media:credit>
+              <description>At the age of 6, Joel Peresman saved 63 cents to buy his first single record. Now he is C.E.O. of the Rock and Roll Hall of Fame Foundation.</description>
+              <dc:creator/>
+              <pubDate>Sun, 27 Jun 2010 14:45:14 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Rock Music</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Rock and Roll Hall of Fame and Museum</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Music</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Museums</category>
+            </item>
+          </channel>
+        </rss>
+    http_version: 
+  recorded_at: Fri, 11 Oct 2013 20:42:02 GMT
+- request:
+    method: get
+    uri: http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2013 20:50:10 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - RMID=007f0100335a525864820087; Expires=Sat, 11 Oct 2014 20:50:10 GMT; Path=/;
+        Domain=.nytimes.com;
+      Vary:
+      - Host
+      Last-Modified:
+      - Thu, 22 Jul 2010 04:31:37 GMT
+      Accept-Ranges:
+      - bytes
+      Ntcoent-Length:
+      - '18703'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml
+      Cache-Control:
+      - private
+      Content-Length:
+      - '4061'
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0"?>
+        <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+          <channel>
+            <title>NYT &gt; Jobs</title>
+            <link>http://www.nytimes.com/pages/jobs/index.html?partner=rss</link>
+            <atom:link rel="self" type="application/rss+xml" href="http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"/>
+            <description/>
+            <language>en-us</language>
+            <copyright>Copyright 2010  The New York Times Company</copyright>
+            <lastBuildDate>Thu, 22 Jul 2010 04:31:03 GMT </lastBuildDate>
+            <image>
+              <title>NYT &gt; Jobs</title>
+              <url>http://graphics.nytimes.com/images/section/NytSectionHeader.gif</url>
+              <link>http://www.nytimes.com/pages/jobs/index.html?partner=rss</link>
+            </image>
+            <item>
+              <title>Corner Office: Never Duck Tough Questions, Says Drugstore.com&#x2019;s Chief</title>
+              <link>http://www.nytimes.com/2010/07/18/business/18corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/business/18corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description> &#x201C;You have to be transparent as a leader and you have to be willing to take criticism openly,&#x201D; says Dawn Lepore, the chairwoman and C.E.O. of Drugstore.com. She is also a director of eBay and The New York Times Company.</media:description>
+              <media:credit>Tony Cenicola/The New York Times</media:credit>
+              <description>Dawn Lepore, chairwoman and chief executive of Drugstore.com, says good leaders direct employees&#x2019; energies toward the mission at hand.</description>
+              <dc:creator>By ADAM BRYANT</dc:creator>
+              <pubDate>Sun, 18 Jul 2010 02:20:15 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">eBay Inc|EBAY|NASDAQ</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Lepore, Dawn G</category>
+            </item>
+            <item>
+              <title>The Boss: Still Minding the Mill</title>
+              <link>http://www.nytimes.com/2010/07/18/jobs/18boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/jobs/18boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/business/SUB-BOSS/SUB-BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Nancy Garner</media:credit>
+              <description>Bob Moore, founder and chief executive of Bob&#x2019;s Red Mill Natural Foods in Milwaukie, Ore.</description>
+              <dc:creator/>
+              <pubDate>Mon, 19 Jul 2010 18:19:30 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Bob's Red Mill Natural Foods</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Grain</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Organic Food</category>
+            </item>
+            <item>
+              <title>The Search: How to Rebound From a Wrong Career Choice</title>
+              <link>http://www.nytimes.com/2010/07/18/jobs/18search.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/18/jobs/18search.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/18/jobs/18search/18search-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Sean Kelly</media:credit>
+              <description>Many young people can be steered into careers and discover much later that the choice was wrong.</description>
+              <dc:creator>By PHYLLIS KORKKI</dc:creator>
+              <pubDate>Sat, 17 Jul 2010 21:02:53 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+            </item>
+            <item>
+              <title>Corner Office: Always Thank Your Star Players, Chegg&#x2019;s C.E.O. Says</title>
+              <link>http://www.nytimes.com/2010/07/11/business/11corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/business/11corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Dan Rosensweig is president and chief executive of Chegg, which rents textbooks online and by mail. He likes to call the company&#x2019;s best employees to say thanks &#x2014; and to tell them that they&#x2019;re &#x201C;knocking the cover off the ball.&#x201D;</media:description>
+              <media:credit>Tony Cenicola/The New York Times</media:credit>
+              <description>Dan Rosensweig, president and C.E.O. of Chegg Inc., the online and mail-order textbook rental service, admires people who aren&#x2019;t afraid to think big.</description>
+              <dc:creator/>
+              <pubDate>Sun, 11 Jul 2010 02:00:27 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Rosensweig, Dan</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Chegg Inc</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+            </item>
+            <item>
+              <title>Preoccupations: An Entrepreneur Who Took a Chance on Herself</title>
+              <link>http://www.nytimes.com/2010/07/11/jobs/11pre.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/jobs/11pre.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/PRE/PRE-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Prerna Gupta runs a start-up company that makes LaDiDa, a &#x201C;reverse karaoke&#x201D; application for the iPhone.</media:description>
+              <media:credit>Erik S. Lesser for The New York Times</media:credit>
+              <description>Prerna Gupta, C.E.O. of Khush Inc. &#x2014; the creator of an iPhone app called LaDiDa &#x2014; discusses her journey to entrepreneurship.</description>
+              <dc:creator>By PRERNA GUPTA</dc:creator>
+              <pubDate>Sat, 10 Jul 2010 18:53:50 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Gupta, Prerna</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">iPhone</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Entrepreneurship</category>
+            </item>
+            <item>
+              <title>The Boss: Margaret Minson: When the Game&#x2019;s on the Line</title>
+              <link>http://www.nytimes.com/2010/07/11/jobs/11boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/11/jobs/11boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/11/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Dr. Margaret M. Minson</media:description>
+              <media:credit/>
+              <description>As an athlete, Margaret Minson of Student Sponsor Partners learned how to take risks &#x2014; a quality that has helped her in her career.</description>
+              <dc:creator/>
+              <pubDate>Sat, 10 Jul 2010 18:59:33 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Athletics and Sports</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Education and Schools</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Colleges and Universities</category>
+            </item>
+            <item>
+              <title>Corner Office: Susan Docherty of G.M.: What if You Were in My Shoes?</title>
+              <link>http://www.nytimes.com/2010/02/07/business/07corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/02/07/business/07corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/02/07/business/07cornerprint_CA0/07cornerprint_CA0-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Susan Docherty, who leads the United States sales, service and marketing team at General Motors, says she asks job candidates for three things they would do if they were in her position.</media:description>
+              <media:credit>Fabrizio Costantini for The New York Times</media:credit>
+              <description>Susan Docherty of General Motors says that by asking potential hires how they would perform her job, she gets an idea of how they think on their feet.</description>
+              <dc:creator/>
+              <pubDate>Tue, 13 Apr 2010 18:40:54 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">General Motors</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Docherty, Susan</category>
+            </item>
+            <item>
+              <title>For a New Generation, an Elusive American Dream</title>
+              <link>http://www.nytimes.com/2010/07/07/business/economy/07generation.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/07/business/economy/07generation.html</guid>
+              <description>In the Nicholson family, America is not delivering for a grandson as it did for his father and grandfather.</description>
+              <dc:creator>By LOUIS UCHITELLE</dc:creator>
+              <pubDate>Wed, 07 Jul 2010 16:12:06 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">United States Economy</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Children and Youth</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Recession and Depression</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Economic Conditions and Trends</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_keyword">The Great Depression</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_keyword">The Great Recession</category>
+            </item>
+            <item>
+              <title>Corner Office: The Limited&#x2019;s Chief: Re-Recruit Your Team Every Day</title>
+              <link>http://www.nytimes.com/2010/07/04/business/04corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/business/04corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/CORNER/CORNER-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>Linda Heasley is president and chief executive of The Limited, based near Columbus, Ohio. She says that it&#x2019;s her job to always give her associates &#x201C;a reason to choose to work for us and for me as opposed to anybody else.&#x201D;</media:description>
+              <media:credit>Marilynn K. Yee/The New York Times</media:credit>
+              <description>Linda Heasley of The Limited says she should always be able to show her workers why they should work for her and her company.</description>
+              <dc:creator/>
+              <pubDate>Sun, 04 Jul 2010 03:40:00 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Hiring and Promotion</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Shopping and Retail</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Limited Brands</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Heasley, Linda</category>
+            </item>
+            <item>
+              <title>The Boss: Flying the Annin &amp; Co. Flag</title>
+              <link>http://www.nytimes.com/2010/07/04/jobs/04boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/jobs/04boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit/>
+              <description>After trying to buy the nation&#x2019;s oldest flag company, an executive with wide experience ended up running it.</description>
+              <dc:creator/>
+              <pubDate>Sun, 04 Jul 2010 04:30:01 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Flags, Emblems and Insignia</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Annin &amp; Co.</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_per">Scarlett, Lindley</category>
+            </item>
+            <item>
+              <title>Career Couch: Avoiding Collisions of Church and the Workplace</title>
+              <link>http://www.nytimes.com/2010/07/04/jobs/04career.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/07/04/jobs/04career.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/07/04/business/04career-ready/04career-ready-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Chris Reed</media:credit>
+              <description>When it comes to religious expression at work, employers must balance the interests of the business with their employees&#x2019; beliefs, workplace experts say.</description>
+              <dc:creator>By EILENE ZIMMERMAN</dc:creator>
+              <pubDate>Sun, 04 Jul 2010 04:20:00 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Holidays and Special Occasions</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Religion and Belief</category>
+            </item>
+            <item>
+              <title>Corner Office: To MasterCard&#x2019;s Retiring Chief, the X Factor is Presence</title>
+              <link>http://www.nytimes.com/2010/06/27/business/27corner.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/business/27corner.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/CORNER/CORNER-thumbStandard-v2.jpg" medium="image" height="75" width="75"/>
+              <media:description>Robert W. Selander, who is retiring this week as C.E.O. of MasterCard, a job he held for 14 years, says it's important to relate to all of a company's stakeholders.</media:description>
+              <media:credit>Todd Heisler/The New York Times</media:credit>
+              <description>Robert W. Selander, who is retiring this week as chief executive of MasterCard, says it is important for leaders to relate to stakeholders at different levels of their companies.</description>
+              <dc:creator/>
+              <pubDate>Mon, 28 Jun 2010 03:19:11 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Credit Cards</category>
+            </item>
+            <item>
+              <title>Preoccupations: The Urban Lands of Opportunity</title>
+              <link>http://www.nytimes.com/2010/06/27/jobs/27pre.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/jobs/27pre.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/PRE/PRE-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description>A Starbucks in Fort Worth. Lifestyles and work styles have blurred to the point that a stop for coffee also offers a chance to tackle important tasks.</media:description>
+              <media:credit>Tom Pennington/Getty Images</media:credit>
+              <description>Where we live, rather than who&#x2019;s employing us, may now be attaching us to our work and careers.</description>
+              <dc:creator>By RICHARD FLORIDA</dc:creator>
+              <pubDate>Sun, 27 Jun 2010 14:10:03 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Labor and Jobs</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Urban Areas</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Sociology</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Careers and Professions</category>
+            </item>
+            <item>
+              <title>The Boss: Joel Peresman, Drawn to the Music</title>
+              <link>http://www.nytimes.com/2010/06/27/jobs/27boss.html?partner=rss&amp;emc=rss</link>
+              <guid isPermaLink="true">http://www.nytimes.com/2010/06/27/jobs/27boss.html</guid>
+              <media:content url="http://graphics8.nytimes.com/images/2010/06/27/business/BOSS/BOSS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+              <media:description/>
+              <media:credit>Janet Macoska</media:credit>
+              <description>At the age of 6, Joel Peresman saved 63 cents to buy his first single record. Now he is C.E.O. of the Rock and Roll Hall of Fame Foundation.</description>
+              <dc:creator/>
+              <pubDate>Sun, 27 Jun 2010 14:45:14 GMT</pubDate>
+              <category domain="http://www.nytimes.com/namespaces/des">Rock Music</category>
+              <category domain="http://www.nytimes.com/namespaces/nyt_org_all">Rock and Roll Hall of Fame and Museum</category>
+              <category domain="http://www.nytimes.com/namespaces/des">Music</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Executives and Management</category>
+              <category domain="http://www.nytimes.com/namespaces/mdes">Museums</category>
+            </item>
+          </channel>
+        </rss>
+    http_version: 
+  recorded_at: Fri, 11 Oct 2013 20:50:11 GMT
+recorded_with: VCR 2.4.0
