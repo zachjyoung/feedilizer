@@ -1,6 +1,6 @@
 class Blog < ActiveRecord::Base
-require 'simple-rss'
-require 'open-uri'
+  require 'simple-rss'
+  require 'open-uri'
  
   has_many :feed_entries, inverse_of: :blog 
   has_many :blog_categorizations, inverse_of: :blog

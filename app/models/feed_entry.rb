@@ -1,6 +1,6 @@
 class FeedEntry < ActiveRecord::Base
-require 'simple-rss'
-require 'open-uri'
+  require 'simple-rss'
+  require 'open-uri'
 
   include ActionView::Helpers::TextHelper
 
