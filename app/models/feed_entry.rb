@@ -42,6 +42,8 @@ class FeedEntry < ActiveRecord::Base
       return entry.summary
     elsif entry.content.present?
       return entry.content.truncate(250)
+    elsif entry.description.present?
+      return entry.description
     else
       return ""
     end
