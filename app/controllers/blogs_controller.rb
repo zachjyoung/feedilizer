@@ -19,13 +19,21 @@ class BlogsController < ApplicationController
   end
 
   def show
-
+    @blog = Blog.find(params[:id])
   end
 
   def edit
-
+    @blog = Blog.find(params[:id])
   end
 
+def update
+      @blog = Blog.find(params[:id])
+      if @blog.update(blog_params)
+         redirect_to blogs_path, notice: 'Category was successfully updated.'
+      else
+         render action: 'edit'
+      end
+  end
   private
 
   def blog_params

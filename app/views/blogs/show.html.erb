@@ -1,6 +1,9 @@
+<%= @blog.title %>
 
-      <td><%=blog.title %></td>
-              <td><% blog.categories.each do |category| %></td>
-          <td><%=link_to category.name, category_path(category) %> </td>
+  <td><% @blog.categories.each do |category| %></td>
 
-          <% end %>
+  <td><%=link_to category.name, category_path(category) %> </td>
+
+  <% end %>
+
+<td><%= link_to 'Edit categories', edit_blog_path(@blog) %></td>
