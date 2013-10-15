@@ -22,15 +22,17 @@ class FeedEntry < ActiveRecord::Base
 
   def self.add_entries(entries, blog_id)
     entries.each do |entry|
-      unless exists? :guid => entry.id
+      guid = entry.guid || entry.id
+      unless exists? :guid => guid
         create!(
           :name          => entry.title,
           :summary       => entry_summary(entry),
           :url           => entry.link,
-          :published_at  => entry.pubDate,
-          :guid          => entry.guid,
+          :published_at  => entry.pubDate || entry.published || entry.updated,
+          :guid          => guid,
           :blog_id       => blog_id
         )
+
       end
     end
   end

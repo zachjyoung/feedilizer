@@ -43,12 +43,13 @@ group :development, :test do
   gem 'shoulda'
   gem 'pry-rails'
   gem 'vcr', '2.4.0'
-  gem 'webmock'
+
 end
 
 group :test do
   gem 'rake'
   gem 'coveralls', require: false
+  gem 'webmock'
 end
 
 group :production do 
