@@ -2,8 +2,8 @@
   <h3>All the blogs</h3>
   <ul>
   <% @feed_entries.each do |entry| %>
-    <li><%= link_to entry.title, entry.url %></li>
-    <li><%= entry.summary %></li>
+    <h4><li><%= link_to entry.name, entry.url %></li></h4>
+    <li><%= entry.summary.html_safe %></li>
   <% end %>
   </ul>
 </div>
