@@ -17,13 +17,13 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
       login_user(user)
       visit root_path
       click_on "Add blog"
-      fill_in "URL", with: blog.url
+      fill_in "URL", with: blog.feed_url
       select category.name, from: "Category"
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
-      expect(Blog.count).to eql(initial_blog_count + 1)
-      expect(UserBlog.count).to eql(initial_user_blog_count + 1)
     end
+    expect(Blog.count).to eql(initial_blog_count + 1)
+    expect(UserBlog.count).to eql(initial_user_blog_count + 1)
   end
 
   scenario 'Authenticated user adds a blog to their feed that someone else has already added' do
@@ -34,13 +34,13 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
       login_user(user)
       visit root_path
       click_on "Add blog"
-      fill_in "URL", with: blog.url
+      fill_in "URL", with: blog.feed_url
       select category.name, from: "Category"
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
-      expect(Blog.count).to eql(initial_blog_count)
-      expect(UserBlog.count).to eql(initial_user_blog_count + 1)
     end
+    expect(Blog.count).to eql(initial_blog_count)
+    expect(UserBlog.count).to eql(initial_user_blog_count + 1)
   end
 
   scenario 'Authenticated user adds a blog to their feed that someone else has already added' do
@@ -51,13 +51,13 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
       login_user(user)
       visit root_path
       click_on "Add blog"
-      fill_in "URL", with: blog.url
+      fill_in "URL", with: blog.feed_url
       select category.name, from: "Category"
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
-      expect(Blog.count).to eql(initial_blog_count)
-      expect(UserBlog.count).to eql(initial_user_blog_count + 1)
     end
+    expect(Blog.count).to eql(initial_blog_count)
+    expect(UserBlog.count).to eql(initial_user_blog_count + 1)
   end
 
 end

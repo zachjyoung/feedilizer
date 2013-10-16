@@ -1068,4 +1068,135 @@ http_interactions:
         width=\"1\" height=\"1\" src=\"http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.0.7\"/></div></noscript>\n\n\n</body>\n\n</html>"
     http_version: 
   recorded_at: Wed, 16 Oct 2013 15:29:55 GMT
+- request:
+    method: get
+    uri: http://www.nytimes.com/services/xml/rss/nyt/1JobMarket.html
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 16 Oct 2013 15:40:10 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 01 Dec 1994 16:00:00 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - RMID=007f01006c74525eb35a0007; Expires=Thu, 16 Oct 2014 15:40:10 GMT; Path=/;
+        Domain=.nytimes.com;
+      - adxcs=-; path=/; domain=.nytimes.com
+      Vary:
+      - Host
+      Ntcoent-Length:
+      - '7434'
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '2393'
+    body:
+      encoding: UTF-8
+      string: "\n\n\n\n\n\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"
+        \"http://www.w3.org/TR/html4/loose.dtd\">\n<html xmlns:og=\"http://opengraphprotocol.org/schema/\"
+        xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head>\n<title>The New York
+        Times &#62; Page Not Found</title>\n<meta  http-equiv=\"Content-Type\" content=\"text/html;
+        charset=iso-8859-1\">\n\n<meta  name=\"robots\" content=\"noarchive\">\n\n<meta
+        \ name=\"CG\" content=\"Member Center\">\n\n<meta  name=\"SCG\" content=\"\">\n\n<meta
+        \ name=\"PT\" content=\"Member Center\">\n\n<meta  name=\"PST\" content=\"Error
+        Page\">\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"http://css.nyt.com/css/0.1/screen/build/error/styles.css\"><!--[if
+        IE]>\n\t\t    <style type=\"text/css\">\n\t\t        @import url(http://css.nyt.com/css/0.1/screen/common/ie.css);\n\t\t
+        \   </style>\n\t\t<![endif]-->\n<!--[if IE 6]>\n\t\t    <style type=\"text/css\">\n\t\t
+        \       @import url(http://css.nyt.com/css/0.1/screen/common/ie6.css);\n\t\t
+        \   </style>\n\t\t<![endif]-->\n<script type=\"text/javascript\" src=\"http://js.nyt.com/js/common.js\"></script>\n</head>\n\n
+        \   \n\n\n\n\n\n<body >\n\n<a name=\"top\"></a>\n<div id=\"shell\">\n<ul id=\"memberTools\">
+        \                                       \n<li><a href=\"http://www.nytimes.com/membercenter/sitehelp.html\">Help</a></li>\n</ul>\n<div
+        class=\"tabsContainer\">\n<ul id=\"mainTabs\" class=\"tabs\">\n<li class=\"first
+        mainTabHome\"><a href=\"http://www.nytimes.com\">Home Page</a></li>\n<li class=\"mainTabTodaysPaper\"><a
+        href=\"http://www.nytimes.com/pages/todayspaper/index.html\">Today's Paper</a></li>\n<li
+        class=\"mainTabVideo\"><a href=\"http://www.nytimes.com/video\">Video</a></li>\n<li
+        class=\"mainTabMostPopular\"><a href=\"http://www.nytimes.com/mostpopular\">Most
+        Popular</a></li>\n<li class=\"mainTabTimesTopics\"><a href=\"http://topics.nytimes.com/top/reference/timestopics\">Times
+        Topics</a></li>\n</ul>\n</div>\n<div id=\"page\" class=\"tabContent active\">\n<div
+        class=\"clearfix\" id=\"masthead\">\n<div id=\"searchWidget\">\n<div class=\"inlineSearchControl\">\n<form
+        enctype=\"application/x-www-form-urlencoded\" action=\"http://query.nytimes.com/search/sitesearch\"
+        method=\"get\" name=\"searchForm\" id=\"searchForm\">\n<input type=\"hidden\"
+        value=\"full\" name=\"date_select\"/>\n<label for=\"searchQuery\">Search All
+        NYTimes.com</label>\n<input type=\"text\" class=\"text\" value=\"\" size=\"\"
+        name=\"query\" id=\"searchQuery\"/>\n<input type=\"hidden\" id=\"searchAll\"
+        name=\"type\" value=\"nyt\"/>\n<input type=\"image\" id=\"searchSubmit\" title=\"Search\"
+        alt=\"Search\" width=\"22\" height=\"19\" src=\"http://i1.nyt.com/images/global/buttons/go.gif\"/>\n</form>\n</div>\n</div>\n<div
+        id=\"branding\">\n<a href=\"http://www.nytimes.com\"><img src=\"http://i1.nyt.com/images/misc/nytlogo152x23.gif\"
+        alt=\"New York Times\" id=\"NYTLogo\"/></a>                            \n</div>\n</div>\n<div
+        id=\"main\">\n<div class=\"spanAB wrap closing\">\n<div id=\"abColumn\" class=\"abColumn\"><!--open
+        abColumn -->\n<div class=\"columnGroup header insetV\">\n<h2>Page Not Found</h2>\n<p>We&rsquo;re
+        sorry, we seem to have lost this page, but we don&rsquo;t want to lose you.</p>\n<ul>\n<li>\n<strong>Check
+        the Archives.</strong> Most articles remain\nonline for seven days after publication.
+        Articles back to 1851 are available\nthrough <a href=\"http://query.nytimes.com/search/query?srchst=nyt&&srcht=a&srchr=n\">The
+        New York Times Article Archive</a>. 1851 &ndash;\npresent.\n</li>\n<li>\n<strong>Report
+        the broken link.</strong> If you clicked on a\nheadline or other link on NYTimes.com,
+        you can <a href=\"http://www.nytimes.com/membercenter/formblink.html\">report
+        the missing page</a>.\n</li>\n</ul>\n</div>\n<div class=\"columnGroup singleRule
+        insetPadded\">\n<h3 class=\"sectionHeader\">Or, you&rsquo;re bound to find
+        something of interest here.</h3>\n<div id=\"mostPopWidget\"></div>\n<script
+        src=\"http://js.nyt.com/js/app/recommendations/recommendationsModule.js\"
+        type=\"text/javascript\" charset=\"utf-8\"></script>\n</div>\n</div><!--close
+        abColumn -->\n<div class=\"cColumn\"><!--open cColumn -->\n<div class=\"columnGroup\">\n<div
+        class=\"inlineSearchControl blue box\">\n<div class=\"inset\">\n<form id=\"searchFormCCol\"
+        name=\"searchFormCCol\" method=\"get\" action=\"http://query.nytimes.com/search/sitesearch\"
+        enctype=\"application/x-www-form-urlencoded\">\n<input type=\"hidden\" name=\"date_select\"
+        value=\"full\" />\n<label for=\"searchQueryCCol\">Search NYTimes.com</label>\n<input
+        type=\"text\" id=\"searchQueryCCol\" name=\"query\" size=\"\" value=\"\" class=\"text\"
+        />\n<input type=\"hidden\" value=\"nyt\" name=\"type\" id=\"searchAll\" />\n<input
+        width=\"22\" type=\"image\" height=\"19\" src=\"http://i1.nyt.com/images/global/buttons/go.gif\"
+        alt=\"Search\" title=\"Search\" id=\"searchSubmit\" />\n</form>\n</div>\n</div>\n</div>\n</div>
+        <!--close cColumn -->\n</div><!--close spanAB -->\n</div><!--close main -->\n<div
+        id=\"footer\">\n<ul class=\"first\">\n<li class=\"first\"><a href=\"http://www.nytimes.com\">Home</a></li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/world/index.html\">World</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/national/index.html\">U.S.</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/nyregion/index.html\">N.Y. / Region</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/business/index.html\">Business</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/technology/index.html\">Technology</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/science/index.html\">Science</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/health/index.html\">Health</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/sports/index.html\">Sports</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/opinion/index.html\">Opinion</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/arts/index.html\">Arts</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/style/index.html\">Style</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/travel/index.html\">Travel</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/jobs/index.html\">Jobs</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/realestate/index.html\">Real Estate</a>\n</li>\n<li
+        >\n<a href=\"http://www.nytimes.com/pages/automobiles/index.html\">Autos</a>\n</li>\n<li><a
+        href=\"http://spiderbites.nytimes.com/\">Site Map</a></li>\n</ul>    <ul>\n<li
+        class=\"first\"><a href=\"http://www.nytimes.com/ref/membercenter/help/copyright.html\">&copy;
+        2011</a> <a href=\"http://www.nytco.com/\">The New York Times Company</a></li>\n<li><a
+        href=\"http://www.nytimes.com/privacy\">Privacy</a></li>\n<li><a href=\"http://www.nytimes.com/ref/membercenter/help/privacy.html#pp\">Your
+        Ad Choices</a></li>\n<li><a href=\"http://www.nytimes.com/ref/membercenter/help/agree.html\">Terms
+        of Service</a></li>\n<li class=\"termsOfSale\"><a href=\"http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html\">Terms
+        of Sale</a></li>\n<li><a href=\"http://www.nytimes.com/corrections.html\">Corrections</a></li>\n<li><a
+        class=\"rssButton\" href=\"http://www.nytimes.com/rss\">RSS</a></li>\n<li><a
+        href=\"http://www.nytimes.com/membercenter/sitehelp.html\">Help</a></li>\n<li><a
+        href=\"http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html\">Contact
+        Us</a></li>\n<li><a href=\"http://www.nytco.com/careers\">Work for Us</a></li>\n<li><a
+        href=\"http://www.nytimes.whsites.net/mediakit/\">Advertise</a></li>\n</ul>\n</div>\n</div><!--close
+        page -->\n</div><!--close shell -->\n<script src=\"http://js.nyt.com/js/app/analytics/trackingTags_v1.1.js\"
+        type=\"text/javascript\"></script><noscript><div><img alt=\"DCSIMG\" id=\"DCSIMG\"
+        width=\"1\" height=\"1\" src=\"http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.0.7\"/></div></noscript>\n\n\n</body>\n\n</html>"
+    http_version: 
+  recorded_at: Wed, 16 Oct 2013 15:40:10 GMT
 recorded_with: VCR 2.4.0

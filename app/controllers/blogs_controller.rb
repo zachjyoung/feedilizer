@@ -6,21 +6,24 @@ class BlogsController < ApplicationController
 
   def create
     url = blog_params[:url]
-    if Blog.where(feed_url: url).present?
-      @blog = Blog.where(feed_url: url).first
+    blog = Blog.where(feed_url: url).first
+    if current_user.blogs.include?(blog)
+      redirect_to blog_entries_path, notice: "You already subscribe to #{blog.title}"
     else
-      @blog = Blog.blog_from_url(url)
-      if @blog.save
-        BlogEntry.update_from_feed(@blog)
-      else
-        render 'new'
+      if blog.present?
+        @blog = blog
+      else 
+        @blog = Blog.blog_from_url(url)
+        if @blog.save
+          BlogEntry.update_from_feed(@blog)
+        else
+          render 'new'
+        end
       end
-    end
-    unless current_user.blogs.include?(@blog) 
-      UserBlog.create(user_id: current_user.id, blog_id: @blog.id)    
-    end
+    UserBlog.create(user: current_user, blog: @blog)
     redirect_to blog_entries_path, notice: "#{@blog.title} has been added to your feed."
   end
+end
 
   private
 
