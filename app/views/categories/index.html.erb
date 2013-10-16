@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <% @categories.each do |category| %>
+    <%= link_to simple_format(category.name), category_path(category) %>
+  <% end %>
+<% end %>
+

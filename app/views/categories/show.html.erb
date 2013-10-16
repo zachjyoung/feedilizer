@@ -1,0 +1,10 @@
+
+
+<h2><%= @category.name %></h2>
+
+<% @category.blogs.each do |blog| %>
+
+<%= link_to simple_format(blog.title), blog_path(blog) %>
+
+
+<% end %>

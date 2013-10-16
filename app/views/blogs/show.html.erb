@@ -1,5 +1,6 @@
-<%= @blog.title %>
+<h2><%= link_to simple_format(@blog.title), @blog.url %></h2>
+
   <td><% @blog.categories.each do |category| %></td>
-    <td><%=link_to category.name, category_path(category) %> </td>
+    <td><%=link_to simple_format(category.name), category_path(category) %> </td>
   <% end %>
 <td><%= link_to 'Edit categories', edit_blog_path(@blog) %></td>

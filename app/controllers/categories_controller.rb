@@ -4,7 +4,9 @@ class CategoriesController < ApplicationController
   end
 
   def index
-    @category = Category.all
+    if user_signed_in?
+      @categories = current_user.categories
+    end
   end
 
   def create
@@ -17,7 +19,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @category = Category.find(params[:id])
+    @category = current_user.categories.find(params[:id])
   end
 
   def edit
