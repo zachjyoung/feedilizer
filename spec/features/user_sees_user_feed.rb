@@ -18,10 +18,10 @@ feature "user sees user's own feed", %Q{
   let!(:blog_entry) { FactoryGirl.create(:blog_entry, blog: blog) }
   let!(:blog_entry2) { FactoryGirl.create(:blog_entry, blog: blog2) }
   let!(:blog_entry3) { FactoryGirl.create(:blog_entry, blog: blog3) }
-  let!(:user_blog) { FactoryGirl.create(:user_blog, blog_id: blog.id, user_id: user.id) }
-  let!(:user_blog2) { FactoryGirl.create(:user_blog, blog_id: blog2.id, user_id: user2.id) }
-  let!(:user_blog3) { FactoryGirl.create(:user_blog, blog_id: blog3.id, user_id: user.id) }
-  let!(:user_blog4) { FactoryGirl.create(:user_blog, blog_id: blog3.id, user_id: user2.id) } 
+  let!(:user_blog) { FactoryGirl.create(:user_blog, blog: blog, user: user) }
+  let!(:user_blog2) { FactoryGirl.create(:user_blog, blog: blog2, user: user2) }
+  let!(:user_blog3) { FactoryGirl.create(:user_blog, blog: blog3, user: user) }
+  let!(:user_blog4) { FactoryGirl.create(:user_blog, blog: blog3, user: user2) } 
 
   scenario 'user views her feed' do
     login_user(user)
