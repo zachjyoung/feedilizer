@@ -6,13 +6,19 @@ class BlogsController < ApplicationController
 
   def create
     url = blog_params[:url]
-    @blog = Blog.blog_from_url(url)
-    if @blog.save
-      FeedEntry.update_from_feed(@blog)
-      redirect_to root_path, notice: "#{@blog.title} has been added to your feed."
+    if Blog.where(feed_url: url).present?
+      @blog = Blog.where(feed_url: url).first
+      redirect_to blog_entries_path, notice: "#{@blog.title} has been added to your feed."
     else
-      render 'new'
+      @blog = Blog.blog_from_url(url)
+      if @blog.save
+        BlogEntry.update_from_feed(@blog)
+        redirect_to blog_entries_path, notice: "#{@blog.title} has been added to your feed."
+      else
+        render 'new'
+      end
     end
+    UserBlog.create(user_id: current_user.id, blog_id: @blog.id)
   end
 
   private

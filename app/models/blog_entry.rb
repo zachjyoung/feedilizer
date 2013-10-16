@@ -1,10 +1,11 @@
-class FeedEntry < ActiveRecord::Base
+class BlogEntry < ActiveRecord::Base
   require 'simple-rss'
   require 'open-uri'
 
   include ActionView::Helpers::TextHelper
 
-  belongs_to :blog, inverse_of: :feed_entries
+  belongs_to :blog, inverse_of: :blog_entries
+  has_many :users, through: :blogs, inverse_of: :blog_entries
 
   validates_presence_of :name
   validates_presence_of :guid

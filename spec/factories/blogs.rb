@@ -2,7 +2,8 @@
 
 FactoryGirl.define do
   factory :blog do
-    url "http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"
+    sequence(:url) { |n| "http://www.nytimes.com/services/xml/rss/nyt/#{n}JobMarket.html" }
     title "NYT &gt; Jobs"
+    feed_url "http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml"
   end
 end
