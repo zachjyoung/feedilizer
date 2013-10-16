@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FeedEntry do
+describe BlogEntry do
   it { should have_valid(:guid).when("http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml", "11") }
   it { should_not have_valid(:guid).when("", nil) }
 
@@ -14,4 +14,5 @@ describe FeedEntry do
   it { should_not have_valid(:name).when("", nil) }
 
   it { should belong_to(:blog) }
+  it { should have_many(:users) }
 end

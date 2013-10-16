@@ -7,7 +7,7 @@ describe Blog do
   it { should have_valid(:title).when("Awesome Blog") }
   it { should_not have_valid(:title).when("", nil) }
 
-  it { should have_many(:feed_entries) }
+  it { should have_many(:blog_entries) }
 
   describe ".blog_from_url" do
     let(:feed_url) { "http://www.nytimes.com/services/xml/rss/nyt/JobMarket.xml" }

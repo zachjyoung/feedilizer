@@ -3,7 +3,7 @@ Feedilizer::Application.routes.draw do
 
   resources :homes
 
-  resources :feed_entries
+  resources :blog_entries
 
   resources :categories
 

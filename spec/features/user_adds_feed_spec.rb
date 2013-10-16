@@ -21,7 +21,7 @@ let(:blog) { FactoryGirl.build(:blog) }
     VCR.use_cassette('valid_feed') do 
       login_user(user)
       click_on "Add blog"
-      fill_in "URL", with: blog.url
+      fill_in "URL", with: blog.feed_url
       click_on "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
     end  

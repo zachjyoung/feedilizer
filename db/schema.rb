@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131011155931) do
+=======
+
+ActiveRecord::Schema.define(version: 20131015205001) do
+
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,15 +32,19 @@ ActiveRecord::Schema.define(version: 20131011155931) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.string   "feed_url",   null: false
   end
 
-  create_table "categories", force: true do |t|
-    t.string  "name",    null: false
-    t.integer "user_id", null: false
-  end
-
+<<<<<<< HEAD
   create_table "feed_entries", force: true do |t|
+=======
+  create_table "categories", force: true do |t|
+    t.string "name", null: false
+  end
+
+
+
+  create_table "blog_entries", force: true do |t|
+>>>>>>> master
     t.string   "name",         null: false
     t.text     "summary"
     t.string   "url",          null: false
@@ -44,6 +54,23 @@ ActiveRecord::Schema.define(version: 20131011155931) do
     t.datetime "updated_at"
     t.string   "title"
     t.integer  "blog_id",      null: false
+<<<<<<< HEAD
+=======
+
+  end
+
+  create_table "blogs", force: true do |t|
+    t.string   "url",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.string   "feed_url",   null: false
+  end
+
+  create_table "categories", force: true do |t|
+    t.string  "name",    null: false
+    t.integer "user_id", null: false
+>>>>>>> master
   end
 
   create_table "user_blogs", force: true do |t|
