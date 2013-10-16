@@ -6,21 +6,14 @@ class BlogsController < ApplicationController
   end
 
   def create
-<<<<<<< HEAD
-    @blog = Blog.blog_from_url(blog_params[:url])
-    if @blog.save
-      FeedEntry.update_from_feed(@blog)
-      redirect_to root_path, notice: "#{@blog.title} has been added to your feed."
-=======
     url = blog_params[:url]
     blog = Blog.where(feed_url: url).first
     if current_user.blogs.include?(blog)
       redirect_to blog_entries_path, notice: "You already subscribe to #{blog.title}"
->>>>>>> master
     else
       if blog.present?
         @blog = blog
-      else 
+      else
         @blog = Blog.blog_from_url(url)
         if @blog.save
           BlogEntry.update_from_feed(@blog)

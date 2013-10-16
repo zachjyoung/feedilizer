@@ -3,8 +3,8 @@
     <h3>All your blogs</h3>
     <ul>
     <% @blog_entries.each do |entry| %>
-      <li><%= link_to entry.name, entry.url %></li>
-      <li><%= entry.summary %></li>
+      <li><%= link_to simple_format(entry.name), entry.url %></li>
+      <li><%= simple_format(entry.summary) %></li>
     <% end %>
     </ul>
   </div>
