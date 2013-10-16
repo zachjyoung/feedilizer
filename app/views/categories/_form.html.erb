@@ -1,23 +1,21 @@
-
 <h1>Add a New Category</h1>
 
-<%= form_for @category do |f| %>
-  <%- if @category.errors.size > 0 -%>
-  <ul class="errors">
-    <%- @category.errors.full_messages.each do |error| -%>
-      <li><%= error %></li>
+  <%= form_for @category do |f| %>
+    <%- if @category.errors.size > 0 -%>
+      <ul class="errors">
+        <%- @category.errors.full_messages.each do |error| -%>
+        <li><%= error %></li>
+      </ul>
     <%- end -%>
-  </ul>
-<%- end -%>
-
+  <%- end -%>
 
   <div>
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
 
-    <div>
+  <div>
     <%= f.submit 'Record', id: "record" %>
-    </div>
+  </div>
 
 <% end %>

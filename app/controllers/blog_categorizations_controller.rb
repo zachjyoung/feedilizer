@@ -1,12 +1,8 @@
 class BlogCategorizationsController < ApplicationController
-def destroy
-    binding.pry
+  def destroy
     @blog_categorization = BlogCategorization.where(params[:category_id, :blog_id])
     @category.destroy
-    respond_to do |format|
-      format.html { redirect_to blogs_path }
-      format.json { head :no_content }
-    end
+    redirect_to blogs_path
   end
 
   def update

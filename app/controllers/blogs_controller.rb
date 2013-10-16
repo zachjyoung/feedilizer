@@ -1,11 +1,11 @@
 class BlogsController < ApplicationController
   include ActionView::Helpers::TextHelper
+
   def new
     @blog = Blog.new
   end
 
   def create
-    #url = blog_params[:url]
     @blog = Blog.blog_from_url(blog_params[:url])
     if @blog.save
       FeedEntry.update_from_feed(@blog)
@@ -27,8 +27,8 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
-def update
-      @blog = Blog.find(params[:id])
+  def update
+    @blog = Blog.find(params[:id])
       if @blog.update(blog_params)
          redirect_to blogs_path, notice: 'Category was successfully updated.'
       else
