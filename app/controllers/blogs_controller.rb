@@ -1,22 +1,33 @@
 class BlogsController < ApplicationController
-
+  include ActionView::Helpers::TextHelper
   def new
     @blog = Blog.new
   end
 
   def create
     url = blog_params[:url]
-    @blog = Blog.blog_from_url(url)
-    if @blog.save
-      redirect_to root_path, notice: "#{@blog.title} has been added to your feed."
+    blog = Blog.where(feed_url: url).first
+    if current_user.blogs.include?(blog)
+      redirect_to blog_entries_path, notice: "You already subscribe to #{blog.title}"
     else
-      render 'new'
-    end
+      if blog.present?
+        @blog = blog
+      else 
+        @blog = Blog.blog_from_url(url)
+        if @blog.save
+          BlogEntry.update_from_feed(@blog)
+        else
+          render 'new'
+        end
+      end
+    UserBlog.create(user: current_user, blog: @blog)
+    redirect_to blog_entries_path, notice: "#{@blog.title} has been added to your feed."
   end
+end
 
   private
 
   def blog_params
-    params.require(:blog).permit(:url)
+    params.require(:blog).permit(:url, category_ids:[])
   end
 end
