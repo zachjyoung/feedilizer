@@ -3,7 +3,7 @@
     <h3>All your blogs</h3>
     <ul>
     <% @blog_entries.each do |entry| %>
-      <li><%= link_to entry.title, entry.url %></li>
+      <li><%= link_to entry.name, entry.url %></li>
       <li><%= entry.summary %></li>
     <% end %>
     </ul>
