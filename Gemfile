@@ -27,6 +27,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'sidekiq'
+gem 'sinatra', '>=1.3.0', :require => nil
+gem 'sidetiq'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -44,7 +48,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'vcr', '2.4.0'
-
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -63,13 +67,15 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
 
+
 gem 'simple-rss'
+
+gem 'unicorn'
+gem 'foreman'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

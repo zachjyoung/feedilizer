@@ -1,4 +1,7 @@
+require 'sidekiq/web'
+
 Feedilizer::Application.routes.draw do
+
   resources :blogs
 
   resources :homes
@@ -9,7 +12,8 @@ Feedilizer::Application.routes.draw do
 
   devise_for :users
 
-  resources :blog_categorizations, only: [:destroy]
+
+  mount Sidekiq::Web, at: '/sidekiq'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

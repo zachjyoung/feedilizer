@@ -22,23 +22,21 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/blog_entries">Blog Entries</a></li>
+      <li><a href="/blog_entries">Blog Entries</a></li>
       <li><a href="/blogs">Blogs</a></li>
       <li><a href="/categories">Categories</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-     <div class="test">
-          <%- if user_signed_in? -%>
-              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
-              <li><%= link_to "Add blog", new_blog_path %></li>
-            <%- else -%>
-              <li><%= link_to "Sign in", new_user_session_path %></li>
-              <li><%= link_to "Sign up", new_user_registration_path %></li>
-            <% end %>
-          </div>
-        </ul>
-      </li>
-    </ul>
+    <%- if user_signed_in? -%>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Add blog", new_blog_path %></li>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+      </ul>
+    <%- else -%>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Sign in", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      </ul>
+    <% end %>
   </div><!-- /.navbar-collapse -->
 </nav>
 
