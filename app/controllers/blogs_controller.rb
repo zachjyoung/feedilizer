@@ -15,7 +15,7 @@ class BlogsController < ApplicationController
       else 
         @blog = Blog.blog_from_url(url)
         if @blog.save
-          BlogEntry.update_from_feed(@blog)
+          HardWorker.perform_async(@blog.id)
         else
           render 'new'
         end

@@ -20,7 +20,6 @@ class BlogEntry < ActiveRecord::Base
 
   private
 
-
   def self.add_entries(entries, blog_id)
     entries.each do |entry|
       guid = entry.guid || entry.id
@@ -33,7 +32,6 @@ class BlogEntry < ActiveRecord::Base
           :guid          => guid,
           :blog_id       => blog_id
         )
-
       end
     end
   end
