@@ -67,9 +67,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
 
-
 gem 'simple-rss'
-
 gem 'unicorn'
 gem 'foreman'
 
