@@ -47,7 +47,6 @@ group :development, :test do
   gem 'shoulda'
   gem 'pry-rails'
   gem 'vcr', '2.4.0'
-
 end
 
 group :test do
@@ -67,12 +66,12 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 
 gem 'simple-rss'
 
+gem 'unicorn'
+gem 'foreman'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
