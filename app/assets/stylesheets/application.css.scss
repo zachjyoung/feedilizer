@@ -5,22 +5,22 @@ html, body {
   height: 100%;
 }
 body { 
-  padding-top: 60px;
+  padding-top: 30px;
   background-image: url('ricepaper.png');
 
 }
 
-.container {
+.navbar {
+  background-color: #480000;
+}
+
+.content_container, .col-md-3 {
+  background-color: #993300;
   height: 100%;
 }
 
-.meat {
+.row, .col-md-9 {
   background-color: #FFF;
-  height: 100%;
-}
-
-.hello-sidebar {
-  background-color: lightgreen;
   height: 100%;
 }
 
