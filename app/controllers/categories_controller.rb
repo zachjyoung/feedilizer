@@ -20,6 +20,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = current_user.categories.find(params[:id])
+    @blog_entries = @category.blog_entries.order("published_at DESC")
   end
 
   def edit
