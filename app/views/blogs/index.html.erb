@@ -1,13 +1,9 @@
 <h1>Blogs</h1>
-
-      <% @blogs.each do |blog| %>
-        <h3 class="hey"><%=link_to simple_format(blog.title), blog_path(blog) %></h3>
-             <% blog.categories.each do |category| %>
-          <%=link_to simple_format(category.name), category_path(category) %>
-        </tr>
+  <% @blogs.each do |blog| %>
+    <h3 class="hey"><%=link_to simple_format(blog.title), blog_path(blog) %></h3>
+      <% blog.categories.each do |category| %>
+        <%=link_to simple_format(category.name), category_path(category) %>
       <% end %>
     <% end %>
-  </tbody>
-</table>
-<br>
+  <br>
 <%= link_to 'Add New Blog', new_blog_path, class: 'button' %>

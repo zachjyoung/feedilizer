@@ -13,12 +13,12 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
   scenario 'Authenticated user adds a blog to their feed' do
     initial_blog_count = Blog.count
     initial_user_blog_count = UserBlog.count
-    VCR.use_cassette('valid_feed') do 
+    VCR.use_cassette('valid_feed') do
       login_user(user)
       visit root_path
       click_on "Add blog"
       fill_in "URL", with: blog.feed_url
-      select category.name, from: "Category"
+      check(category.name)
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
     end
@@ -30,12 +30,12 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
     blog.save
     initial_blog_count = Blog.count
     initial_user_blog_count = UserBlog.count
-    VCR.use_cassette('valid_feed') do 
+    VCR.use_cassette('valid_feed') do
       login_user(user)
       visit root_path
       click_on "Add blog"
       fill_in "URL", with: blog.feed_url
-      select category.name, from: "Category"
+      check(category.name)
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
     end
@@ -47,12 +47,12 @@ let!(:category) { FactoryGirl.create(:category, user_id: user.id) }
     blog.save
     initial_blog_count = Blog.count
     initial_user_blog_count = UserBlog.count
-    VCR.use_cassette('valid_feed') do 
+    VCR.use_cassette('valid_feed') do
       login_user(user)
       visit root_path
       click_on "Add blog"
       fill_in "URL", with: blog.feed_url
-      select category.name, from: "Category"
+      check(category.name)
       click_button "Submit"
       expect(page).to have_content("#{blog.title} has been added to your feed.")
     end

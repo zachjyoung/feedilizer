@@ -2,8 +2,7 @@
   <div id="recent_episodes">
     <h2>All your blogs</h2>
     <% @blog_entries.each do |entry| %>
-
-      <span><h3><%= link_to simple_format(entry.name), entry.url %></h3>
+      <h3><%= link_to simple_format(entry.name), entry.url %></h3>
       <h4><u><%= link_to simple_format(entry.blog.title), entry.blog.url %> </u><h4>
       <h5><li><%= simple_format(entry.summary) %></li></h5>
     <% end %>
