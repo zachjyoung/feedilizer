@@ -1,0 +1,7 @@
+<ul><h2><%= link_to simple_format(@blog.title), @blog.url %></h2>
+  <% @blog.categories.each do |category| %>
+   <li> <%=link_to simple_format(category.name), category_path(category) %> </li>
+</ul>
+  <% end %>
+  <br>
+  <%= link_to 'Edit categories', edit_blog_path(@blog) %>

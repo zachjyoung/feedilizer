@@ -38,7 +38,7 @@ end
 
 gem 'simple_form'
 
-group :development, :test do 
+group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
@@ -46,6 +46,7 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda'
   gem 'pry-rails'
+  gem 'quiet_assets'
   gem 'vcr', '2.4.0'
   gem 'dotenv-rails'
 end
@@ -56,7 +57,7 @@ group :test do
   gem 'webmock'
 end
 
-group :production do 
+group :production do
   gem 'rails_12factor'
 end
 
@@ -65,10 +66,13 @@ gem 'devise'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
+
+
 gem 'simple-rss'
 
 gem 'unicorn'
 gem 'foreman'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,13 +1,12 @@
 <% if user_signed_in? %>
   <div id="recent_episodes">
-    <h3>All your blogs</h3>
-    <ul>
+    <h2>All your blogs</h2>
     <% @blog_entries.each do |entry| %>
-      <li><%= link_to entry.name, entry.url %></li>
-      <li><%= entry.summary %></li>
+      <h3><%= link_to simple_format(entry.name), entry.url %></h3>
+      <h4><u><%= link_to simple_format(entry.blog.title), entry.blog.url %> </u><h4>
+      <h5><li><%= simple_format(entry.summary) %></li></h5>
     <% end %>
-    </ul>
   </div>
 <% else %>
-  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "sign up", new_user_registration_path %> to add and view blogs!
+  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "Sign up", new_user_registration_path %> to add and view blogs!
 <% end %>

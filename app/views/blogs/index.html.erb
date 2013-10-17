@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+<h1>Blogs</h1>
+  <% @blogs.each do |blog| %>
+    <h3 class="hey"><%=link_to simple_format(blog.title), blog_path(blog) %></h3>
+      <% blog.categories.each do |category| %>
+        <%=link_to simple_format(category.name), category_path(category) %>
+      <% end %>
+    <% end %>
+  <br>
+<%= link_to 'Add New Blog', new_blog_path, class: 'button' %>
+<% else %>
+  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "ign up", new_user_registration_path %> to add and view blogs!
+<% end %>

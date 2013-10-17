@@ -8,7 +8,10 @@ Feedilizer::Application.routes.draw do
 
   resources :blog_entries
 
+  resources :categories
+
   devise_for :users
+
 
   mount Sidekiq::Web, at: '/sidekiq'
   # The priority is based upon order of creation: first created -> highest priority.
@@ -51,7 +54,7 @@ Feedilizer::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

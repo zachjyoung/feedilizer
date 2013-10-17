@@ -5,5 +5,8 @@ class BlogEntriesController < ApplicationController
       @blog_entries = current_user.blog_entries.order("published_at DESC")
     end
   end
+  def show
+    @blog_entries = current_user.blog_entries.order("published_at DESC")
+  end
 
 end

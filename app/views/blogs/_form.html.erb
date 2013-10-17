@@ -1,0 +1,8 @@
+<%= simple_form_for @blog do |f|%>
+  <%= f.input :url, label: "URL" %>
+  <%= f.association :categories, as: :check_boxes %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Add New Category', new_category_path, id: "new_link", remote: true %>
+
