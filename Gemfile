@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'sidekiq'
 gem 'sinatra', '>=1.3.0', :require => nil
+gem 'sidetiq'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

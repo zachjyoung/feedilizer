@@ -21,4 +21,9 @@ class Blog < ActiveRecord::Base
     blog.feed_url = feed_url
     blog
   end
+
+  def update_from_feed
+    feed = SimpleRSS.parse open(feed_url)
+    BlogEntry.add_entries(feed.entries, id)
+  end
 end

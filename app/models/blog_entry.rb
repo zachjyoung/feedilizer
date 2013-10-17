@@ -13,11 +13,6 @@ class BlogEntry < ActiveRecord::Base
 
   validates :url, :format => URI::regexp(%w(http https))
 
-  def self.update_from_feed(blog)
-    feed = SimpleRSS.parse open(blog.feed_url)
-    add_entries(feed.entries, blog.id)
-  end
-
   private
 
   def self.add_entries(entries, blog_id)
