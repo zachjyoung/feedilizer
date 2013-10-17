@@ -47,6 +47,7 @@ group :development, :test do
   gem 'shoulda'
   gem 'pry-rails'
   gem 'vcr', '2.4.0'
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -68,7 +69,6 @@ gem 'simple-rss'
 
 gem 'unicorn'
 gem 'foreman'
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
