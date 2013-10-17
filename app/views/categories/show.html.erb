@@ -1,10 +1,8 @@
+<ul>
+  <h2><%= @category.name %></h2>
 
+  <% @category.blogs.each do |blog| %>
+    <li><%= link_to simple_format(blog.title), blog_path(blog) %></li>
 
-<h2><%= @category.name %></h2>
-
-<% @category.blogs.each do |blog| %>
-
-<%= link_to simple_format(blog.title), blog_path(blog) %>
-
-
-<% end %>
+  </ul>
+  <% end %>

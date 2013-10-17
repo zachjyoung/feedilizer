@@ -1,15 +1,9 @@
-<table>
-  <thead>
-    <tr>
-      <th>Blogs</th>
-    </tr>
-  </thead>
-    <tbody>
+<h1>Blogs</h1>
+
       <% @blogs.each do |blog| %>
-        <tr>
-          <td><%=link_to simple_format(blog.title), blog_path(blog) %></td>
-             <td><% blog.categories.each do |category| %></td>
-          <td><%=link_to category.name, category_path(category) %> </td>
+        <h3 class="hey"><%=link_to simple_format(blog.title), blog_path(blog) %></h3>
+             <% blog.categories.each do |category| %>
+          <%=link_to simple_format(category.name), category_path(category) %>
         </tr>
       <% end %>
     <% end %>

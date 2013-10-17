@@ -22,13 +22,13 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/blog_entries">Blog Entries</a></li>
+      <li class="active"><a href="/blog_entries">Blog Entries</a></li>
       <li><a href="/blogs">Blogs</a></li>
       <li><a href="/categories">Categories</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
      <div class="test">
-            <%- if user_signed_in? -%>
+          <%- if user_signed_in? -%>
               <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
               <li><%= link_to "Add blog", new_blog_path %></li>
             <%- else -%>
@@ -44,7 +44,7 @@
 
       <% flash.each do |name, msg| %>
         <div class="alert alert-info">
-          <%= content_tag :div, simple_format(msg), id: "flash_#{name}" %>
+          <%= content_tag :div, msg, id: "flash_#{name}" %>
         </div>
       <% end %>
     </div>
