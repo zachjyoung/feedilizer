@@ -12,7 +12,7 @@ class Blog < ActiveRecord::Base
 
   validates :url, :format => URI::regexp(%w(http https))
   validates_presence_of :title
-  validates_uniqueness_of :url
+  validates_uniqueness_of :feed_url
   validates :feed_url, :format => URI::regexp(%w(http https))
 
 

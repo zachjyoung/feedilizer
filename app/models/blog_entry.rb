@@ -10,6 +10,7 @@ class BlogEntry < ActiveRecord::Base
   validates_presence_of :name
   validates_presence_of :guid
   validates_presence_of :published_at
+  validates_presence_of :blog
 
   validates :url, :format => URI::regexp(%w(http https))
 
