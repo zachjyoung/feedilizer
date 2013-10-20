@@ -1,6 +1,7 @@
 <h2><%= simple_format(@category.name) %></h2>
   <% @category.blog_entries.each do |blog_entry| %>
-    <h3><%= link_to simple_format(blog_entry.blog.title) %></h3>
-    <h3><%= simple_format(blog_entry.name) %></h3>
+    <h2><%= link_to simple_format(blog_entry.name), blog_entry.blog.url %></h2>
+    <h3><%= link_to simple_format(blog_entry.blog.title), blog_entry.blog.url %></h3>
+
     <h5><li><%= simple_format(blog_entry.summary) %></li><h5>
   <% end %>
